@@ -1,8 +1,20 @@
 package mitru.com.mvvmapplication.data;
 
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 /**
  * Created by ctruong on 07/05/2017.
  */
 
 public class PeopleFactory {
+    private final static String BASE_URL = "http://api.randomuser.me/";
+
+    /*public static  PeopleService create() {
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory)
+                .build();
+        return retrofit .create(PeopleService.class);
+    }*/
 }
