@@ -1,5 +1,7 @@
 package mitru.com.mvvmapplication.model;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.io.Serializable;
 
 /**
@@ -7,4 +9,5 @@ import java.io.Serializable;
  */
 
 public class Login implements Serializable {
+    @SerializedName("username") public String userName;
 }
